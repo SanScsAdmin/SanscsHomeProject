@@ -1,0 +1,12 @@
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Sanscs.DAL.dll.config
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Sanscs.DAL.dll
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Sanscs.DAL.pdb
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\EntityFramework.dll
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Sanscs.Model.dll
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Newtonsoft.Json.dll
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Sanscs.Model.pdb
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\EntityFramework.xml
+F:\myproject\Sanscs\Sanscs.DAL\bin\Debug\Newtonsoft.Json.xml
+F:\myproject\Sanscs\Sanscs.DAL\obj\Debug\Sanscs.DAL.csprojResolveAssemblyReference.cache
+F:\myproject\Sanscs\Sanscs.DAL\obj\Debug\Sanscs.DAL.dll
+F:\myproject\Sanscs\Sanscs.DAL\obj\Debug\Sanscs.DAL.pdb

@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SanscsHomeworkPlatformdbModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SanscsHomeworkPlatformdbModelStoreContainer">
+    <EntitySet Name="classes" EntityType="SanscsHomeworkPlatformdbModel.Store.classes" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="courses" EntityType="SanscsHomeworkPlatformdbModel.Store.courses" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="dictionary" EntityType="SanscsHomeworkPlatformdbModel.Store.dictionary" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="difficulties" EntityType="SanscsHomeworkPlatformdbModel.Store.difficulties" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="difficultyweight" EntityType="SanscsHomeworkPlatformdbModel.Store.difficultyweight" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="exam_history" EntityType="SanscsHomeworkPlatformdbModel.Store.exam_history" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="grades" EntityType="SanscsHomeworkPlatformdbModel.Store.grades" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="knowledge_points" EntityType="SanscsHomeworkPlatformdbModel.Store.knowledge_points" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="questions" EntityType="SanscsHomeworkPlatformdbModel.Store.questions" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="questiontags" EntityType="SanscsHomeworkPlatformdbModel.Store.questiontags" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="schools" EntityType="SanscsHomeworkPlatformdbModel.Store.schools" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="students" EntityType="SanscsHomeworkPlatformdbModel.Store.students" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="students_experience" EntityType="SanscsHomeworkPlatformdbModel.Store.students_experience" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="tags" EntityType="SanscsHomeworkPlatformdbModel.Store.tags" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="terms" EntityType="SanscsHomeworkPlatformdbModel.Store.terms" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <AssociationSet Name="fk_Courses_Grades1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Courses_Grades1">
+      <End Role="grades" EntitySet="grades" />
+      <End Role="courses" EntitySet="courses" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Courses_Terms1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Courses_Terms1">
+      <End Role="terms" EntitySet="terms" />
+      <End Role="courses" EntitySet="courses" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DifficultyWeight_Knowledge_Points1" Association="SanscsHomeworkPlatformdbModel.Store.fk_DifficultyWeight_Knowledge_Points1">
+      <End Role="knowledge_points" EntitySet="knowledge_points" />
+      <End Role="difficultyweight" EntitySet="difficultyweight" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ExamHistory_Dictionary1" Association="SanscsHomeworkPlatformdbModel.Store.fk_ExamHistory_Dictionary1">
+      <End Role="dictionary" EntitySet="dictionary" />
+      <End Role="exam_history" EntitySet="exam_history" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ExamHistory_Questions1" Association="SanscsHomeworkPlatformdbModel.Store.fk_ExamHistory_Questions1">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="exam_history" EntitySet="exam_history" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ExamHistory_Students1" Association="SanscsHomeworkPlatformdbModel.Store.fk_ExamHistory_Students1">
+      <End Role="students" EntitySet="students" />
+      <End Role="exam_history" EntitySet="exam_history" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Knowleges_Courses1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Knowleges_Courses1">
+      <End Role="courses" EntitySet="courses" />
+      <End Role="knowledge_points" EntitySet="knowledge_points" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Questions_Difficulties1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Questions_Difficulties1">
+      <End Role="difficulties" EntitySet="difficulties" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Questions_Grades1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Questions_Grades1">
+      <End Role="grades" EntitySet="grades" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Questions_has_Tags_Questions" Association="SanscsHomeworkPlatformdbModel.Store.fk_Questions_has_Tags_Questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="questiontags" EntitySet="questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Questions_has_Tags_Tags1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Questions_has_Tags_Tags1">
+      <End Role="tags" EntitySet="tags" />
+      <End Role="questiontags" EntitySet="questiontags" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Questions_Knowledge_Points1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Questions_Knowledge_Points1">
+      <End Role="knowledge_points" EntitySet="knowledge_points" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Questions_Terms1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Questions_Terms1">
+      <End Role="terms" EntitySet="terms" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_Classes1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_Classes1">
+      <End Role="classes" EntitySet="classes" />
+      <End Role="students" EntitySet="students" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_Experience_Knowledge_Points1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_Experience_Knowledge_Points1">
+      <End Role="knowledge_points" EntitySet="knowledge_points" />
+      <End Role="students_experience" EntitySet="students_experience" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_Grades1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_Grades1">
+      <End Role="grades" EntitySet="grades" />
+      <End Role="students" EntitySet="students" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_has_Tags_Students1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_has_Tags_Students1">
+      <End Role="students" EntitySet="students" />
+      <End Role="students_experience" EntitySet="students_experience" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_has_Tags_Tags1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_has_Tags_Tags1">
+      <End Role="tags" EntitySet="tags" />
+      <End Role="students_experience" EntitySet="students_experience" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_Schools1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_Schools1">
+      <End Role="schools" EntitySet="schools" />
+      <End Role="students" EntitySet="students" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Students_Terms1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Students_Terms1">
+      <End Role="terms" EntitySet="terms" />
+      <End Role="students" EntitySet="students" />
+    </AssociationSet>
+    <AssociationSet Name="fk_StudentsExperience_Difficulties1" Association="SanscsHomeworkPlatformdbModel.Store.fk_StudentsExperience_Difficulties1">
+      <End Role="difficulties" EntitySet="difficulties" />
+      <End Role="students_experience" EntitySet="students_experience" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Tags_has_Difficulties_Difficulties1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Tags_has_Difficulties_Difficulties1">
+      <End Role="difficulties" EntitySet="difficulties" />
+      <End Role="difficultyweight" EntitySet="difficultyweight" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Tags_has_Difficulties_Tags1" Association="SanscsHomeworkPlatformdbModel.Store.fk_Tags_has_Difficulties_Tags1">
+      <End Role="tags" EntitySet="tags" />
+      <End Role="difficultyweight" EntitySet="difficultyweight" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="classes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="courses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Grades_ID" Type="int" Nullable="false" />
+    <Property Name="Terms_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dictionary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TYPE" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="difficulties">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="difficultyweight">
+    <Key>
+      <PropertyRef Name="Tags_ID" />
+      <PropertyRef Name="Difficulties_ID" />
+      <PropertyRef Name="Knowledge_Points_ID" />
+    </Key>
+    <Property Name="Tags_ID" Type="int" Nullable="false" />
+    <Property Name="Difficulties_ID" Type="int" Nullable="false" />
+    <Property Name="Weight" Type="int" Nullable="false" />
+    <Property Name="Knowledge_Points_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exam_history">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Students_ID" Type="int" Nullable="false" />
+    <Property Name="Questions_ID" Type="int" Nullable="false" />
+    <Property Name="Comments_ID" Type="int" Nullable="false" />
+    <Property Name="TakenOn" Type="datetime" Nullable="false" />
+    <Property Name="Is_Correct" Type="bit" Nullable="false" />
+    <Property Name="Time_Used_In_Sec" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="grades">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="knowledge_points">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Courses_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Question_Number" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Is_Available" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="datetime" Nullable="false" />
+    <Property Name="Content" Type="text" Nullable="false" />
+    <Property Name="Difficulties_ID" Type="int" Nullable="false" />
+    <Property Name="Grades_ID" Type="int" Nullable="false" />
+    <Property Name="Terms_ID" Type="int" Nullable="false" />
+    <Property Name="Tips" Type="text" />
+    <Property Name="Solution" Type="text" />
+    <Property Name="ResourceURL" Type="varchar" MaxLength="500" />
+    <Property Name="Score" Type="int" />
+    <Property Name="Knowledge_Points_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questiontags">
+    <Key>
+      <PropertyRef Name="Questions_ID" />
+      <PropertyRef Name="Tags_ID" />
+    </Key>
+    <Property Name="Questions_ID" Type="int" Nullable="false" />
+    <Property Name="Tags_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="schools">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="students">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Alias" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="First_Name" Type="varchar" Nullable="false" MaxLength="70" />
+    <Property Name="Mid_Name" Type="varchar" MaxLength="70" />
+    <Property Name="Last_Name" Type="varchar" Nullable="false" MaxLength="70" />
+    <Property Name="Grades_ID" Type="int" Nullable="false" />
+    <Property Name="Schools_ID" Type="int" Nullable="false" />
+    <Property Name="Classes_ID" Type="int" Nullable="false" />
+    <Property Name="Terms_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="students_experience">
+    <Key>
+      <PropertyRef Name="Students_ID" />
+      <PropertyRef Name="Tags_ID" />
+      <PropertyRef Name="Knowledge_Points_ID" />
+    </Key>
+    <Property Name="Students_ID" Type="int" Nullable="false" />
+    <Property Name="Tags_ID" Type="int" Nullable="false" />
+    <Property Name="Current_Difficulty_Level_ID" Type="int" Nullable="false" />
+    <Property Name="Last_Update_Time" Type="datetime" Nullable="false" />
+    <Property Name="Knowledge_Points_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tags">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="terms">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <Association Name="fk_Courses_Grades1">
+    <End Role="grades" Type="SanscsHomeworkPlatformdbModel.Store.grades" Multiplicity="1" />
+    <End Role="courses" Type="SanscsHomeworkPlatformdbModel.Store.courses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="grades">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="courses">
+        <PropertyRef Name="Grades_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Courses_Terms1">
+    <End Role="terms" Type="SanscsHomeworkPlatformdbModel.Store.terms" Multiplicity="1" />
+    <End Role="courses" Type="SanscsHomeworkPlatformdbModel.Store.courses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="terms">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="courses">
+        <PropertyRef Name="Terms_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DifficultyWeight_Knowledge_Points1">
+    <End Role="knowledge_points" Type="SanscsHomeworkPlatformdbModel.Store.knowledge_points" Multiplicity="1" />
+    <End Role="difficultyweight" Type="SanscsHomeworkPlatformdbModel.Store.difficultyweight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="knowledge_points">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="difficultyweight">
+        <PropertyRef Name="Knowledge_Points_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ExamHistory_Dictionary1">
+    <End Role="dictionary" Type="SanscsHomeworkPlatformdbModel.Store.dictionary" Multiplicity="1" />
+    <End Role="exam_history" Type="SanscsHomeworkPlatformdbModel.Store.exam_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dictionary">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="exam_history">
+        <PropertyRef Name="Comments_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ExamHistory_Questions1">
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="1" />
+    <End Role="exam_history" Type="SanscsHomeworkPlatformdbModel.Store.exam_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="exam_history">
+        <PropertyRef Name="Questions_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ExamHistory_Students1">
+    <End Role="students" Type="SanscsHomeworkPlatformdbModel.Store.students" Multiplicity="1" />
+    <End Role="exam_history" Type="SanscsHomeworkPlatformdbModel.Store.exam_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="students">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="exam_history">
+        <PropertyRef Name="Students_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Knowleges_Courses1">
+    <End Role="courses" Type="SanscsHomeworkPlatformdbModel.Store.courses" Multiplicity="1" />
+    <End Role="knowledge_points" Type="SanscsHomeworkPlatformdbModel.Store.knowledge_points" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="courses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="knowledge_points">
+        <PropertyRef Name="Courses_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Questions_Difficulties1">
+    <End Role="difficulties" Type="SanscsHomeworkPlatformdbModel.Store.difficulties" Multiplicity="1" />
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="difficulties">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="Difficulties_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Questions_Grades1">
+    <End Role="grades" Type="SanscsHomeworkPlatformdbModel.Store.grades" Multiplicity="1" />
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="grades">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="Grades_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Questions_has_Tags_Questions">
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="1" />
+    <End Role="questiontags" Type="SanscsHomeworkPlatformdbModel.Store.questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questiontags">
+        <PropertyRef Name="Questions_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Questions_has_Tags_Tags1">
+    <End Role="tags" Type="SanscsHomeworkPlatformdbModel.Store.tags" Multiplicity="1" />
+    <End Role="questiontags" Type="SanscsHomeworkPlatformdbModel.Store.questiontags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tags">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questiontags">
+        <PropertyRef Name="Tags_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Questions_Knowledge_Points1">
+    <End Role="knowledge_points" Type="SanscsHomeworkPlatformdbModel.Store.knowledge_points" Multiplicity="1" />
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="knowledge_points">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="Knowledge_Points_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Questions_Terms1">
+    <End Role="terms" Type="SanscsHomeworkPlatformdbModel.Store.terms" Multiplicity="1" />
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="terms">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="Terms_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_Classes1">
+    <End Role="classes" Type="SanscsHomeworkPlatformdbModel.Store.classes" Multiplicity="1" />
+    <End Role="students" Type="SanscsHomeworkPlatformdbModel.Store.students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="classes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students">
+        <PropertyRef Name="Classes_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_Experience_Knowledge_Points1">
+    <End Role="knowledge_points" Type="SanscsHomeworkPlatformdbModel.Store.knowledge_points" Multiplicity="1" />
+    <End Role="students_experience" Type="SanscsHomeworkPlatformdbModel.Store.students_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="knowledge_points">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students_experience">
+        <PropertyRef Name="Knowledge_Points_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_Grades1">
+    <End Role="grades" Type="SanscsHomeworkPlatformdbModel.Store.grades" Multiplicity="1" />
+    <End Role="students" Type="SanscsHomeworkPlatformdbModel.Store.students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="grades">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students">
+        <PropertyRef Name="Grades_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_has_Tags_Students1">
+    <End Role="students" Type="SanscsHomeworkPlatformdbModel.Store.students" Multiplicity="1" />
+    <End Role="students_experience" Type="SanscsHomeworkPlatformdbModel.Store.students_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="students">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students_experience">
+        <PropertyRef Name="Students_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_has_Tags_Tags1">
+    <End Role="tags" Type="SanscsHomeworkPlatformdbModel.Store.tags" Multiplicity="1" />
+    <End Role="students_experience" Type="SanscsHomeworkPlatformdbModel.Store.students_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tags">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students_experience">
+        <PropertyRef Name="Tags_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_Schools1">
+    <End Role="schools" Type="SanscsHomeworkPlatformdbModel.Store.schools" Multiplicity="1" />
+    <End Role="students" Type="SanscsHomeworkPlatformdbModel.Store.students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="schools">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students">
+        <PropertyRef Name="Schools_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Students_Terms1">
+    <End Role="terms" Type="SanscsHomeworkPlatformdbModel.Store.terms" Multiplicity="1" />
+    <End Role="students" Type="SanscsHomeworkPlatformdbModel.Store.students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="terms">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students">
+        <PropertyRef Name="Terms_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_StudentsExperience_Difficulties1">
+    <End Role="difficulties" Type="SanscsHomeworkPlatformdbModel.Store.difficulties" Multiplicity="1" />
+    <End Role="students_experience" Type="SanscsHomeworkPlatformdbModel.Store.students_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="difficulties">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="students_experience">
+        <PropertyRef Name="Current_Difficulty_Level_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Tags_has_Difficulties_Difficulties1">
+    <End Role="difficulties" Type="SanscsHomeworkPlatformdbModel.Store.difficulties" Multiplicity="1" />
+    <End Role="difficultyweight" Type="SanscsHomeworkPlatformdbModel.Store.difficultyweight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="difficulties">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="difficultyweight">
+        <PropertyRef Name="Difficulties_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Tags_has_Difficulties_Tags1">
+    <End Role="tags" Type="SanscsHomeworkPlatformdbModel.Store.tags" Multiplicity="1" />
+    <End Role="difficultyweight" Type="SanscsHomeworkPlatformdbModel.Store.difficultyweight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tags">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="difficultyweight">
+        <PropertyRef Name="Tags_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

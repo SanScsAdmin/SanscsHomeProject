@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="550d0489addb46baa8ab84be6e4e0d7e" Name="Diagram1">
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.class" Width="1.5" PointX="3.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.cours" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.dictionary" Width="1.5" PointX="8.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.difficulty" Width="1.5" PointX="6.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.difficultyweight" Width="1.5" PointX="7.5" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.exam_history" Width="1.5" PointX="10.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.grade" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.knowledge_points" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.question" Width="1.5" PointX="8.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.school" Width="1.5" PointX="3.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.student" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.students_experience" Width="1.5" PointX="13" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.tag" Width="1.5" PointX="10.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.term" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_Classes1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Courses_Grades1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Courses_Terms1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Knowleges_Courses1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_ExamHistory_Dictionary1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Questions_Difficulties1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_StudentsExperience_Difficulties1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Tags_has_Difficulties_Difficulties1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_DifficultyWeight_Knowledge_Points1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Tags_has_Difficulties_Tags1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_ExamHistory_Questions1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_ExamHistory_Students1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Questions_Grades1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_Grades1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Questions_Knowledge_Points1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_Experience_Knowledge_Points1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Questions_Terms1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_Schools1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_has_Tags_Students1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_Terms1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_has_Tags_Tags1" ManuallyRouted="false" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.questiontags" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

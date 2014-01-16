@@ -1,0 +1,10 @@
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\Sanscs.Model.dll.config
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\Sanscs.Model.dll
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\Sanscs.Model.pdb
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\EntityFramework.dll
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\Newtonsoft.Json.dll
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\EntityFramework.xml
+F:\myproject\Sanscs\Sanscs.Model\bin\Debug\Newtonsoft.Json.xml
+F:\myproject\Sanscs\Sanscs.Model\obj\Debug\Sanscs.Model.csprojResolveAssemblyReference.cache
+F:\myproject\Sanscs\Sanscs.Model\obj\Debug\Sanscs.Model.dll
+F:\myproject\Sanscs\Sanscs.Model\obj\Debug\Sanscs.Model.pdb

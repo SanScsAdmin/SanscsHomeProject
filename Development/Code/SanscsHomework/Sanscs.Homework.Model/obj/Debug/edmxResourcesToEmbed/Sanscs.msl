@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SanscsHomeworkPlatformdbModelStoreContainer" CdmEntityContainer="SanscsHomeworkPlatformdbEntities">
+    <EntitySetMapping Name="classes">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.class">
+        <MappingFragment StoreEntitySet="classes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="courses">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.cours">
+        <MappingFragment StoreEntitySet="courses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Grades_ID" ColumnName="Grades_ID" />
+          <ScalarProperty Name="Terms_ID" ColumnName="Terms_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dictionaries">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.dictionary">
+        <MappingFragment StoreEntitySet="dictionary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="difficulties">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.difficulty">
+        <MappingFragment StoreEntitySet="difficulties">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="difficultyweights">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.difficultyweight">
+        <MappingFragment StoreEntitySet="difficultyweight">
+          <ScalarProperty Name="Tags_ID" ColumnName="Tags_ID" />
+          <ScalarProperty Name="Difficulties_ID" ColumnName="Difficulties_ID" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Knowledge_Points_ID" ColumnName="Knowledge_Points_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exam_history">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.exam_history">
+        <MappingFragment StoreEntitySet="exam_history">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Students_ID" ColumnName="Students_ID" />
+          <ScalarProperty Name="Questions_ID" ColumnName="Questions_ID" />
+          <ScalarProperty Name="Comments_ID" ColumnName="Comments_ID" />
+          <ScalarProperty Name="TakenOn" ColumnName="TakenOn" />
+          <ScalarProperty Name="Is_Correct" ColumnName="Is_Correct" />
+          <ScalarProperty Name="Time_Used_In_Sec" ColumnName="Time_Used_In_Sec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="grades">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.grade">
+        <MappingFragment StoreEntitySet="grades">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="knowledge_points">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.knowledge_points">
+        <MappingFragment StoreEntitySet="knowledge_points">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Courses_ID" ColumnName="Courses_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.question">
+        <MappingFragment StoreEntitySet="questions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Question_Number" ColumnName="Question_Number" />
+          <ScalarProperty Name="Is_Available" ColumnName="Is_Available" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Difficulties_ID" ColumnName="Difficulties_ID" />
+          <ScalarProperty Name="Grades_ID" ColumnName="Grades_ID" />
+          <ScalarProperty Name="Terms_ID" ColumnName="Terms_ID" />
+          <ScalarProperty Name="Tips" ColumnName="Tips" />
+          <ScalarProperty Name="Solution" ColumnName="Solution" />
+          <ScalarProperty Name="ResourceURL" ColumnName="ResourceURL" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Knowledge_Points_ID" ColumnName="Knowledge_Points_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="schools">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.school">
+        <MappingFragment StoreEntitySet="schools">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.student">
+        <MappingFragment StoreEntitySet="students">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Mid_Name" ColumnName="Mid_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Grades_ID" ColumnName="Grades_ID" />
+          <ScalarProperty Name="Schools_ID" ColumnName="Schools_ID" />
+          <ScalarProperty Name="Classes_ID" ColumnName="Classes_ID" />
+          <ScalarProperty Name="Terms_ID" ColumnName="Terms_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students_experience">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.students_experience">
+        <MappingFragment StoreEntitySet="students_experience">
+          <ScalarProperty Name="Students_ID" ColumnName="Students_ID" />
+          <ScalarProperty Name="Tags_ID" ColumnName="Tags_ID" />
+          <ScalarProperty Name="Current_Difficulty_Level_ID" ColumnName="Current_Difficulty_Level_ID" />
+          <ScalarProperty Name="Last_Update_Time" ColumnName="Last_Update_Time" />
+          <ScalarProperty Name="Knowledge_Points_ID" ColumnName="Knowledge_Points_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tags">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.tag">
+        <MappingFragment StoreEntitySet="tags">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="terms">
+      <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.term">
+        <MappingFragment StoreEntitySet="terms">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="questiontags" TypeName="SanscsHomeworkPlatformdbModel.questiontags" StoreEntitySet="questiontags">
+      <EndProperty Name="questions">
+        <ScalarProperty Name="ID" ColumnName="Questions_ID" />
+      </EndProperty>
+      <EndProperty Name="tags">
+        <ScalarProperty Name="ID" ColumnName="Tags_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
