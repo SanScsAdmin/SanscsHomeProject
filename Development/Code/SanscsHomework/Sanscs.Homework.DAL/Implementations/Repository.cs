@@ -17,6 +17,7 @@ namespace Sanscs.Homework.DAL.Implementations
         {
             DatabaseFactory = databaseFactory;
             dbset = DataContext.Set<T>();
+            
         }
 
         protected IDatabaseFactory DatabaseFactory
@@ -35,6 +36,7 @@ namespace Sanscs.Homework.DAL.Implementations
         }
         public virtual void Update(T entity)
         {
+            alert();
             dbset.Attach(entity);
             dataContext.Entry(entity).State = EntityState.Modified;
         }
@@ -42,6 +44,7 @@ namespace Sanscs.Homework.DAL.Implementations
         {
             dbset.Remove(entity);
         }
+            alert();
         public virtual void Delete(Expression<Func<T, bool>> where)
         {
             IEnumerable<T> objects = dbset.Where<T>(where).AsEnumerable();
