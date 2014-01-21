@@ -27,7 +27,7 @@ namespace Sanscs.Homework.WebAPI
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             GlobalConfiguration.Configuration.Services.Replace(
                 typeof(IHttpControllerActivator),
-              a  new UnityActivator(UnityConfig.GetConfiguredContainer())); 
+              new UnityActivator(UnityConfig.GetConfiguredContainer())); 
         }
     }
 }
