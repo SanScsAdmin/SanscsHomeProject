@@ -24,3 +24,16 @@ F:\myproject\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Newtonsoft.Json
 F:\myproject\SanscsHomework\Sanscs.Homework.Repository\obj\Debug\Sanscs.Homework.Repository.csprojResolveAssemblyReference.cache
 F:\myproject\SanscsHomework\Sanscs.Homework.Repository\obj\Debug\Sanscs.Repository.dll
 F:\myproject\SanscsHomework\Sanscs.Homework.Repository\obj\Debug\Sanscs.Repository.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Sanscs.Repository.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Sanscs.Repository.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\EntityFramework.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Sanscs.DAL.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Sanscs.Model.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Newtonsoft.Json.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Sanscs.DAL.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Sanscs.Model.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\EntityFramework.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\bin\Debug\Newtonsoft.Json.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\obj\Debug\Sanscs.Homework.Repository.csprojResolveAssemblyReference.cache
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\obj\Debug\Sanscs.Repository.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Repository\obj\Debug\Sanscs.Repository.pdb

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="groupsinglechoice.xsl"?>
+<assessmentItem identifier="choice" title="Unattended Luggage" adaptive="false" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE3" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE4" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="integer"/>
+	<itemBody>
+		<p>Section A<br/>
+　　Directions:In this section,you will hear 8 short conversations and 2 long conversations. At the end of each conversation, one or more questions will be asked about what was said. Both the conversation and the questions will be spoken only once. After each question there will be a pause. During the pause,you must read the four choices marked A), B), C)and D), and decide which is the best answer. Then mark the corresponding letter on Answer Sheet 1 with a single line through the center.
+</p>
+		<mp3></mp3>
+		<choiceInteraction responseIdentifier="RESPONSE" shuffle="false" maxChoices="1">
+		<prompt></prompt>
+			<simpleChoice identifier="ChoiceA">Go to a place he has visited.</simpleChoice>
+			<simpleChoice identifier="ChoiceB">Make her own arrangements.</simpleChoice>
+			<simpleChoice identifier="ChoiceC">Consult a travel agent.</simpleChoice>
+			<simpleChoice identifier="ChoiceD">Join in a package tour.</simpleChoice>
+		</choiceInteraction>
+		<choiceInteraction responseIdentifier="RESPONSE1" shuffle="false" maxChoices="1">
+		<prompt></prompt>
+			<simpleChoice identifier="ChoiceA">Go to a place he has visited.</simpleChoice>
+			<simpleChoice identifier="ChoiceB">Make her own arrangements.</simpleChoice>
+			<simpleChoice identifier="ChoiceC">Consult a travel agent.</simpleChoice>
+			<simpleChoice identifier="ChoiceD">Join in a package tour.</simpleChoice>
+		</choiceInteraction>
+		<p>
+		Questions 9 to 11 are based on the conversation you have heard
+        </p>
+        <mp3></mp3>
+		<choiceInteraction responseIdentifier="RESPONSE2" shuffle="false" maxChoices="1">
+		<prompt></prompt>
+			<simpleChoice identifier="ChoiceA">To look for a job as a salesperson.</simpleChoice>
+			<simpleChoice identifier="ChoiceB">To have a talk with Miss Thompson.</simpleChoice>
+			<simpleChoice identifier="ChoiceC">To place an order for some products.</simpleChoice>
+			<simpleChoice identifier="ChoiceD">To complain about a faulty appliance.</simpleChoice>
+		</choiceInteraction>
+		<p></p>
+		<choiceInteraction responseIdentifier="RESPONSE3" shuffle="false" maxChoices="1">
+		<prompt></prompt>
+			<simpleChoice identifier="ChoiceA">The person in charge is not in the office.</simpleChoice>
+			<simpleChoice identifier="ChoiceB">Make her own arrangements.</simpleChoice>
+			<simpleChoice identifier="ChoiceC">Consult a travel agent.</simpleChoice>
+			<simpleChoice identifier="ChoiceD">Join in a package tour.</simpleChoice>
+		</choiceInteraction>
+			<p></p>
+		<choiceInteraction responseIdentifier="RESPONSE4" shuffle="false" maxChoices="1">
+		<prompt></prompt>
+			<simpleChoice identifier="ChoiceA">0743,12536  extension 15.</simpleChoice>
+			<simpleChoice identifier="ChoiceB">0743,38750  extension 15.</simpleChoice>
+			<simpleChoice identifier="ChoiceC">0743,21653  extension 15.</simpleChoice>
+			<simpleChoice identifier="ChoiceD">0743,62135  extension 15.</simpleChoice>
+		</choiceInteraction>
+		
+	</itemBody>
+	<responseProcessing
+		template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct"/>
+</assessmentItem>

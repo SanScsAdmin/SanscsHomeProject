@@ -22,3 +22,15 @@ F:\myproject\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Newtonsoft.Json.xml
 F:\myproject\SanscsHomework\Sanscs.Homework.DAL\obj\Debug\Sanscs.Homework.DAL.csprojResolveAssemblyReference.cache
 F:\myproject\SanscsHomework\Sanscs.Homework.DAL\obj\Debug\Sanscs.DAL.dll
 F:\myproject\SanscsHomework\Sanscs.Homework.DAL\obj\Debug\Sanscs.DAL.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Sanscs.DAL.dll.config
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Sanscs.DAL.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Sanscs.DAL.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\EntityFramework.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Sanscs.Model.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Newtonsoft.Json.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Sanscs.Model.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\EntityFramework.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\bin\Debug\Newtonsoft.Json.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\obj\Debug\Sanscs.Homework.DAL.csprojResolveAssemblyReference.cache
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\obj\Debug\Sanscs.DAL.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.DAL\obj\Debug\Sanscs.DAL.pdb

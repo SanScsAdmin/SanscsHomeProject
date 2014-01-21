@@ -1,33 +1,17 @@
 ﻿using Sanscs.Homework.DAL.Implementations;
 using Sanscs.Homework.DAL.Contracts;
-using Sanscs.Homework.Model;
+using Sanscs.Model;
 
 namespace Sanscs.Homework.Repository
 {
-    public class QuestionRepository : Repository<question>, IQuestionsRepository
+    public class QuestionRepository : Repository<question>, IQuestionRepository
     {
-        private SanscsHomeworkPlatformdbEntities dataContext;
-
-        protected IDatabaseFactory DatabaseFactory
-        {
-            get;
-            private set;
-        }
-
         public QuestionRepository(IDatabaseFactory databaseFactory)
             : base(databaseFactory)
         {
-            DatabaseFactory = databaseFactory;
         }
-
-        protected SanscsHomeworkPlatformdbEntities DataContext
-        {
-            get { return dataContext ?? (dataContext = DatabaseFactory.Get()); }
-        }
-
-
     }
-    public interface IQuestionsRepository : IRepository<question>
+    public interface IQuestionRepository : IRepository<question>
     {
     }
 }

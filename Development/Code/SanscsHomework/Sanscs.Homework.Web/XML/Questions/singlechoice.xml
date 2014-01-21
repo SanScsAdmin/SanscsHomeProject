@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="choice" title="Unattended Luggage" adaptive="false" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier"  questionId="1">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="integer"/>
+	<itemBody>
+		<choiceInteraction responseIdentifier="RESPONSE" shuffle="false" maxChoices="1">
+			<prompt>If you have any problems during your study here, please do not ( )to call me for help</prompt>
+			<simpleChoice identifier="ChoiceA">A.facilities</simpleChoice>
+			<simpleChoice identifier="ChoiceB">B.hens </simpleChoice>
+			<simpleChoice identifier="ChoiceC">C.votes </simpleChoice>
+			<simpleChoice identifier="ChoiceC">D.artists  </simpleChoice>
+		</choiceInteraction>
+	</itemBody>
+</assessmentItem>

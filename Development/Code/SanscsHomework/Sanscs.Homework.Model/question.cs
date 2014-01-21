@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sanscs.Homework.Model
+namespace Sanscs.Model
 {
     using System;
     using System.Collections.Generic;
@@ -34,6 +34,7 @@ namespace Sanscs.Homework.Model
         public string ResourceURL { get; set; }
         public Nullable<int> Score { get; set; }
         public int Knowledge_Points_ID { get; set; }
+        public Nullable<int> Type_ID { get; set; }
     
         public virtual difficulty difficulty { get; set; }
         public virtual ICollection<exam_history> exam_history { get; set; }
@@ -41,5 +42,6 @@ namespace Sanscs.Homework.Model
         public virtual knowledge_points knowledge_points { get; set; }
         public virtual term term { get; set; }
         public virtual ICollection<tag> tags { get; set; }
+        public virtual question_type question_type { get; set; }
     }
 }

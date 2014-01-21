@@ -1,5 +1,5 @@
-﻿using Sanscs.Homework.Model;
-using System;
+﻿using System;
+using Sanscs.Model;
 
 namespace Sanscs.Homework.DAL.Contracts
 {

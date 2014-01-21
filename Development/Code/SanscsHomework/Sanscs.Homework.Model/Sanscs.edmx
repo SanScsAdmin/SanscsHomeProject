@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SanscsHomeworkPlatformdbModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SanscsHomeworkPlatformdbModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="SanscsHomeworkPlatformdbModelStoreContainer">
           <EntitySet Name="classes" EntityType="SanscsHomeworkPlatformdbModel.Store.classes" store:Type="Tables" Schema="sanscs_homework_platform_db" />
           <EntitySet Name="courses" EntityType="SanscsHomeworkPlatformdbModel.Store.courses" store:Type="Tables" Schema="sanscs_homework_platform_db" />
@@ -14,6 +14,7 @@
           <EntitySet Name="exam_history" EntityType="SanscsHomeworkPlatformdbModel.Store.exam_history" store:Type="Tables" Schema="sanscs_homework_platform_db" />
           <EntitySet Name="grades" EntityType="SanscsHomeworkPlatformdbModel.Store.grades" store:Type="Tables" Schema="sanscs_homework_platform_db" />
           <EntitySet Name="knowledge_points" EntityType="SanscsHomeworkPlatformdbModel.Store.knowledge_points" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+          <EntitySet Name="question_type" EntityType="SanscsHomeworkPlatformdbModel.Store.question_type" store:Type="Tables" Schema="sanscs_homework_platform_db" />
           <EntitySet Name="questions" EntityType="SanscsHomeworkPlatformdbModel.Store.questions" store:Type="Tables" Schema="sanscs_homework_platform_db" />
           <EntitySet Name="questiontags" EntityType="SanscsHomeworkPlatformdbModel.Store.questiontags" store:Type="Tables" Schema="sanscs_homework_platform_db" />
           <EntitySet Name="schools" EntityType="SanscsHomeworkPlatformdbModel.Store.schools" store:Type="Tables" Schema="sanscs_homework_platform_db" />
@@ -113,6 +114,10 @@
             <End Role="tags" EntitySet="tags" />
             <End Role="difficultyweight" EntitySet="difficultyweight" />
           </AssociationSet>
+          <AssociationSet Name="questions_ibfk_1" Association="SanscsHomeworkPlatformdbModel.Store.questions_ibfk_1">
+            <End Role="question_type" EntitySet="question_type" />
+            <End Role="questions" EntitySet="questions" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="classes">
           <Key>
@@ -183,6 +188,13 @@
           <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
           <Property Name="Courses_ID" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="question_type">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="45" />
+        </EntityType>
         <EntityType Name="questions">
           <Key>
             <PropertyRef Name="ID" />
@@ -201,6 +213,7 @@
           <Property Name="ResourceURL" Type="varchar" MaxLength="500" />
           <Property Name="Score" Type="int" />
           <Property Name="Knowledge_Points_ID" Type="int" Nullable="false" />
+          <Property Name="Type_ID" Type="int" />
         </EntityType>
         <EntityType Name="questiontags">
           <Key>
@@ -534,8 +547,21 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
-    </edmx:StorageModels>
+        <Association Name="questions_ibfk_1">
+          <End Role="question_type" Type="SanscsHomeworkPlatformdbModel.Store.question_type" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="question_type">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="questions">
+              <PropertyRef Name="Type_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SanscsHomeworkPlatformdbModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -641,6 +667,11 @@
           <AssociationSet Name="questiontags" Association="SanscsHomeworkPlatformdbModel.questiontags">
             <End Role="questions" EntitySet="questions" />
             <End Role="tags" EntitySet="tags" />
+          </AssociationSet>
+          <EntitySet Name="question_type" EntityType="SanscsHomeworkPlatformdbModel.question_type" />
+          <AssociationSet Name="questions_ibfk_1" Association="SanscsHomeworkPlatformdbModel.questions_ibfk_1">
+            <End Role="question_type" EntitySet="question_type" />
+            <End Role="question" EntitySet="questions" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="class">
@@ -757,6 +788,8 @@
           <NavigationProperty Name="knowledge_points" Relationship="SanscsHomeworkPlatformdbModel.fk_Questions_Knowledge_Points1" FromRole="questions" ToRole="knowledge_points" />
           <NavigationProperty Name="term" Relationship="SanscsHomeworkPlatformdbModel.fk_Questions_Terms1" FromRole="questions" ToRole="terms" />
           <NavigationProperty Name="tags" Relationship="SanscsHomeworkPlatformdbModel.questiontags" FromRole="questions" ToRole="tags" />
+          <Property Type="Int32" Name="Type_ID" />
+          <NavigationProperty Name="question_type" Relationship="SanscsHomeworkPlatformdbModel.questions_ibfk_1" FromRole="question" ToRole="question_type" />
         </EntityType>
         <EntityType Name="school">
           <Key>
@@ -1079,6 +1112,28 @@
           <End Role="questions" Type="SanscsHomeworkPlatformdbModel.question" Multiplicity="*" />
           <End Role="tags" Type="SanscsHomeworkPlatformdbModel.tag" Multiplicity="*" />
         </Association>
+        <EntityType Name="question_type">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="name" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="questions" Relationship="SanscsHomeworkPlatformdbModel.questions_ibfk_1" FromRole="question_type" ToRole="question" />
+        </EntityType>
+        <Association Name="questions_ibfk_1">
+          <End Type="SanscsHomeworkPlatformdbModel.question_type" Role="question_type" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="SanscsHomeworkPlatformdbModel.question" Role="question" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="question_type">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="question">
+              <PropertyRef Name="Type_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1163,6 +1218,7 @@
           <EntitySetMapping Name="questions">
             <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.question">
               <MappingFragment StoreEntitySet="questions">
+                <ScalarProperty Name="Type_ID" ColumnName="Type_ID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Question_Number" ColumnName="Question_Number" />
                 <ScalarProperty Name="Is_Available" ColumnName="Is_Available" />
@@ -1239,6 +1295,14 @@
               <ScalarProperty Name="ID" ColumnName="Tags_ID" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="question_type">
+            <EntityTypeMapping TypeName="SanscsHomeworkPlatformdbModel.question_type">
+              <MappingFragment StoreEntitySet="question_type">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

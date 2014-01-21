@@ -40,7 +40,6 @@ namespace Sanscs.Homework.QuestionImport
                     Tags = properties["tags"],
                     Type=properties["type"],
                     Content=content["content"],
-                    Choices=choices
                 };
             }
            return model;

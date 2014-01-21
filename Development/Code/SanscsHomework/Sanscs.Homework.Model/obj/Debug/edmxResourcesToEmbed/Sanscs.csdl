@@ -103,6 +103,11 @@
       <End Role="questions" EntitySet="questions" />
       <End Role="tags" EntitySet="tags" />
     </AssociationSet>
+    <EntitySet Name="question_type" EntityType="SanscsHomeworkPlatformdbModel.question_type" />
+    <AssociationSet Name="questions_ibfk_1" Association="SanscsHomeworkPlatformdbModel.questions_ibfk_1">
+      <End Role="question_type" EntitySet="question_type" />
+      <End Role="question" EntitySet="questions" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="class">
     <Key>
@@ -218,6 +223,8 @@
     <NavigationProperty Name="knowledge_points" Relationship="SanscsHomeworkPlatformdbModel.fk_Questions_Knowledge_Points1" FromRole="questions" ToRole="knowledge_points" />
     <NavigationProperty Name="term" Relationship="SanscsHomeworkPlatformdbModel.fk_Questions_Terms1" FromRole="questions" ToRole="terms" />
     <NavigationProperty Name="tags" Relationship="SanscsHomeworkPlatformdbModel.questiontags" FromRole="questions" ToRole="tags" />
+    <Property Type="Int32" Name="Type_ID" />
+    <NavigationProperty Name="question_type" Relationship="SanscsHomeworkPlatformdbModel.questions_ibfk_1" FromRole="question" ToRole="question_type" />
   </EntityType>
   <EntityType Name="school">
     <Key>
@@ -539,5 +546,27 @@
   <Association Name="questiontags">
     <End Role="questions" Type="SanscsHomeworkPlatformdbModel.question" Multiplicity="*" />
     <End Role="tags" Type="SanscsHomeworkPlatformdbModel.tag" Multiplicity="*" />
+  </Association>
+  <EntityType Name="question_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="name" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="questions" Relationship="SanscsHomeworkPlatformdbModel.questions_ibfk_1" FromRole="question_type" ToRole="question" />
+  </EntityType>
+  <Association Name="questions_ibfk_1">
+    <End Type="SanscsHomeworkPlatformdbModel.question_type" Role="question_type" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="SanscsHomeworkPlatformdbModel.question" Role="question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="question">
+        <PropertyRef Name="Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
   </Association>
 </Schema>

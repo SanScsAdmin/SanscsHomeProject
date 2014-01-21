@@ -1,6 +1,6 @@
 ﻿using Sanscs.Homework.DAL.Implementations;
 using Sanscs.Homework.DAL.Contracts;
-using Sanscs.Homework.Model;
+using Sanscs.Model;
 
 namespace Sanscs.Homework.Repository
 {

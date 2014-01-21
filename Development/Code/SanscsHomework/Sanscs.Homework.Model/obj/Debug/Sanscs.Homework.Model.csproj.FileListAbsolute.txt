@@ -8,3 +8,12 @@ F:\myproject\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Newtonsoft.Json.xml
 F:\myproject\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Homework.Model.csprojResolveAssemblyReference.cache
 F:\myproject\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Model.dll
 F:\myproject\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Model.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Sanscs.Model.dll.config
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Sanscs.Model.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Sanscs.Model.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\EntityFramework.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Newtonsoft.Json.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\EntityFramework.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Newtonsoft.Json.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Model.dll
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Model.pdb

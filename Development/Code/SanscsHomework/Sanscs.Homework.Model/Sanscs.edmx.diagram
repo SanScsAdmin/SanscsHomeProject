@@ -13,7 +13,7 @@
         <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.exam_history" Width="1.5" PointX="10.75" PointY="6.625" IsExpanded="true" />
         <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.grade" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.knowledge_points" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.question" Width="1.5" PointX="8.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.question" Width="1.5" PointX="8.875" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.school" Width="1.5" PointX="3.75" PointY="15.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.student" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.students_experience" Width="1.5" PointX="13" PointY="9" IsExpanded="true" />
@@ -41,6 +41,8 @@
         <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_Terms1" ManuallyRouted="false" />
         <AssociationConnector Association="SanscsHomeworkPlatformdbModel.fk_Students_has_Tags_Tags1" ManuallyRouted="false" />
         <AssociationConnector Association="SanscsHomeworkPlatformdbModel.questiontags" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SanscsHomeworkPlatformdbModel.question_type" Width="1.5" PointX="6.125" PointY="20.625" />
+        <AssociationConnector Association="SanscsHomeworkPlatformdbModel.questions_ibfk_1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

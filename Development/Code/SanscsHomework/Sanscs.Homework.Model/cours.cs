@@ -7,11 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sanscs.Homework.Model
+namespace Sanscs.Model
 {
     using System;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
     
     public partial class cours
     {
@@ -19,16 +18,14 @@ namespace Sanscs.Homework.Model
         {
             this.knowledge_points = new HashSet<knowledge_points>();
         }
-     [JsonIgnore] 
+    
         public int ID { get; set; }
         public string Name { get; set; }
         public int Grades_ID { get; set; }
         public int Terms_ID { get; set; }
-        [JsonIgnore]    
+    
         public virtual grade grade { get; set; }
-        [JsonIgnore]
         public virtual term term { get; set; }
-       [JsonIgnore]
         public virtual ICollection<knowledge_points> knowledge_points { get; set; }
     }
 }

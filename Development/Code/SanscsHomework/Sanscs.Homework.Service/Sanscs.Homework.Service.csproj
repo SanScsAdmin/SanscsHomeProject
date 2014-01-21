@@ -7,8 +7,8 @@
     <ProjectGuid>{68F15D99-108A-4B62-84E2-452A806B0CC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sanscs.Service</RootNamespace>
-    <AssemblyName>Sanscs.Service</AssemblyName>
+    <RootNamespace>Sanscs.Homework.Service</RootNamespace>
+    <AssemblyName>Sanscs.Homework.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,11 +41,17 @@
   <ItemGroup>
     <Compile Include="Contracts\ICoursService.cs" />
     <Compile Include="Contracts\IQuestionService.cs" />
+    <Compile Include="Functionalities\Contracts\IQuestionTransfer.cs" />
+    <Compile Include="Functionalities\Implementations\QuestionTransfer.cs" />
     <Compile Include="Implementations\CoursService.cs" />
     <Compile Include="Implementations\QuestionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sanscs.Homework.Common\Sanscs.Homework.Common.csproj">
+      <Project>{b0d77b60-0f85-4612-b69c-b450f24fdf8b}</Project>
+      <Name>Sanscs.Homework.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sanscs.Homework.DAL\Sanscs.Homework.DAL.csproj">
       <Project>{803c3437-31bc-43a2-b7ac-1c8b12b8cf1e}</Project>
       <Name>Sanscs.Homework.DAL</Name>
@@ -59,6 +65,7 @@
       <Name>Sanscs.Homework.Repository</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,6 +9,7 @@
     <EntitySet Name="exam_history" EntityType="SanscsHomeworkPlatformdbModel.Store.exam_history" store:Type="Tables" Schema="sanscs_homework_platform_db" />
     <EntitySet Name="grades" EntityType="SanscsHomeworkPlatformdbModel.Store.grades" store:Type="Tables" Schema="sanscs_homework_platform_db" />
     <EntitySet Name="knowledge_points" EntityType="SanscsHomeworkPlatformdbModel.Store.knowledge_points" store:Type="Tables" Schema="sanscs_homework_platform_db" />
+    <EntitySet Name="question_type" EntityType="SanscsHomeworkPlatformdbModel.Store.question_type" store:Type="Tables" Schema="sanscs_homework_platform_db" />
     <EntitySet Name="questions" EntityType="SanscsHomeworkPlatformdbModel.Store.questions" store:Type="Tables" Schema="sanscs_homework_platform_db" />
     <EntitySet Name="questiontags" EntityType="SanscsHomeworkPlatformdbModel.Store.questiontags" store:Type="Tables" Schema="sanscs_homework_platform_db" />
     <EntitySet Name="schools" EntityType="SanscsHomeworkPlatformdbModel.Store.schools" store:Type="Tables" Schema="sanscs_homework_platform_db" />
@@ -108,6 +109,10 @@
       <End Role="tags" EntitySet="tags" />
       <End Role="difficultyweight" EntitySet="difficultyweight" />
     </AssociationSet>
+    <AssociationSet Name="questions_ibfk_1" Association="SanscsHomeworkPlatformdbModel.Store.questions_ibfk_1">
+      <End Role="question_type" EntitySet="question_type" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="classes">
     <Key>
@@ -178,6 +183,13 @@
     <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
     <Property Name="Courses_ID" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="question_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" />
+  </EntityType>
   <EntityType Name="questions">
     <Key>
       <PropertyRef Name="ID" />
@@ -196,6 +208,7 @@
     <Property Name="ResourceURL" Type="varchar" MaxLength="500" />
     <Property Name="Score" Type="int" />
     <Property Name="Knowledge_Points_ID" Type="int" Nullable="false" />
+    <Property Name="Type_ID" Type="int" />
   </EntityType>
   <EntityType Name="questiontags">
     <Key>
@@ -526,6 +539,20 @@
       </Principal>
       <Dependent Role="difficultyweight">
         <PropertyRef Name="Tags_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="questions_ibfk_1">
+    <End Role="question_type" Type="SanscsHomeworkPlatformdbModel.Store.question_type" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="questions" Type="SanscsHomeworkPlatformdbModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="Type_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

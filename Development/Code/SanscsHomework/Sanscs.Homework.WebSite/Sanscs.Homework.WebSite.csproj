@@ -122,6 +122,7 @@
     <Content Include="Images\cart.gif" />
     <Content Include="Images\delete.gif" />
     <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\draggable.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -139,6 +140,7 @@
     <Content Include="Scripts\ViewsJS\Confirmation.js" />
     <Content Include="Scripts\ViewsJS\Cours.js" />
     <Content Include="Scripts\ViewsJS\Products.js" />
+    <Content Include="Scripts\ViewsJS\Question.js" />
     <Content Include="Views\Cours.htm" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -155,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paper.htm" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -174,7 +179,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>10814</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8562/</IISUrl>
+          <IISUrl>http://localhost:8562</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8562/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

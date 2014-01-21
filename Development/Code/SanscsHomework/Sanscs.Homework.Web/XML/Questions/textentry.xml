@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem	identifier="choice" title="Unattended Luggage" adaptive="false" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>York</value>
+		</correctResponse>
+
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>that</value>
+		</correctResponse>
+
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>extension</value>
+		</correctResponse>
+
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE3" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>arrangements</value>
+		</correctResponse>
+
+	</responseDeclaration>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="integer"/>
+	<itemBody>
+	<p>Section C<br/> Directions:
+    In this section, you will hear a passage three times. When the passage is read for the first time，you should listen carefully for its general idea.When the passage is read for the second time，you are required to fill in the blanks with the exact words you have just heard. Finally，when the passage is read for the third time，you should check what you have written.
+.</p>
+		<blockquote>
+			<p>Many college students today own personal computer that cost anywhere from $1,000 to perhaps%5,000 or more. 
+					<textEntryInteraction responseIdentifier="RESPONSE" expectedLength="5"/>;it is not uncommon for them to purchase <textEntryInteraction responseIdentifier="RESPONSE1" expectedLength="5"/>costing another several hundred dollars. Twenty years ago, computers were 
+					<textEntryInteraction responseIdentifier="RESPONSE2" expectedLength="5"/>but they were very large and extremely expensive. <textEntryInteraction responseIdentifier="RESPONSE3" expectedLength="5"/>
+				And all the clouds that lour'd upon our house<br/> In the deep bosom of the ocean
+				buried.</p>
+		</blockquote>
+	</itemBody>
+	<responseProcessing
+		template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct"/>
+</assessmentItem>

@@ -1,5 +1,5 @@
 ﻿using Sanscs.Homework.DAL.Contracts;
-using Sanscs.Homework.Model;
+using Sanscs.Model;
 using Sanscs.Homework.Repository;
 using Sanscs.Homework.Service.Contracts;
 using System.Collections.Generic;

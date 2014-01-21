@@ -10,5 +10,9 @@ namespace Sanscs.Homework.Service.Contracts
     public interface IQuestionService
     {
         int SaveOrUpdateQuestion(QuestionDTO question);
+         void AddExamHistory(ExamHistoryDTO history);
+          IEnumerable<QuestionDTO> GetQuestions();
+
+          string GetAnswer(int ID);
     }
 }

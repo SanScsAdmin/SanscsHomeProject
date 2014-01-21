@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sanscs.Homework.Model
+namespace Sanscs.Model
 {
     using System;
     using System.Collections.Generic;

@@ -1,4 +1,10 @@
-﻿html {
+﻿.question{
+    display:none;
+}
+.question:first-child{
+    display:block;
+}
+html {
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;
@@ -460,6 +466,35 @@ ul#social li {
     }
 
 
+#ccss_stage {
+  position: relative;
+  width: 100%;
+}
+#ccss_stage .dropable-container {
+  position: absolute;
+  width: 153px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+
+#dropables .draggable-objects {
+  width: 144px;
+  height: 18px;
+  border: 1px solid black;
+  float: left;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+  padding: 5px;
+}
+
 /********************
 *   Mobile Styles   *
 ********************/
@@ -634,4 +669,7 @@ ul#social li {
             text-indent: 0;
             width: auto;
         }
+        
+
 }
+

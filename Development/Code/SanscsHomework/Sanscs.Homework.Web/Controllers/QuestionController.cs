@@ -5,9 +5,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Sanscs.Homework.Service.Contracts;
+using Sanscs.Homework.Model.DTO;
+using Sanscs.Common.Helpers;
+using Sanscs.Homework.Common.Filters;
 
 namespace Sanscs.Homework.WebAPI.Controllers
 {
+    [EnableCors]
     public class QuestionController : ApiController
     {
         IQuestionService _questionService;
@@ -58,32 +62,18 @@ namespace Sanscs.Homework.WebAPI.Controllers
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotAcceptable, "This request is not properly formatted"));
             }
         }
-        //public int SaveFill( string filename)
-        //{
 
-        //    if (Request.Files.Count == 0)
-        //    {
-        //        //Request.Files.Count 文件数为0上传不成功
-        //        return 0;
-        //    }
-
-        //    var file = Request.Files[0];
-        //    if (file.ContentLength == 0)
-        //    {
-        //        //文件大小大（以字节为单位）为0时，做一些操作
-        //        return 0;
-        //    }
-        //    else
-        //    {
-        //        //文件大小不为0
-        //        HttpPostedFileBase files = Request.Files[0];
-        //        //保存成自己的文件全路径,newfile就是你上传后保存的文件,
-        //        //服务器上的UpLoadFile文件夹必须有读写权限　　　　　　
-        //        var newFile = filename + ".doc";//"newfile.doc";
-        //        files.SaveAs(Server.MapPath(@"\Upload\File\") + newFile);
-        //    }
-
-        //    return 1;
-        //}
+        public void SaveExamHistory(ExamHistoryDTO history)
+        {
+            _questionService.AddExamHistory(history);
+        }
+        public IEnumerable<QuestionDTO> GetQuestions()
+        {
+           return _questionService.GetQuestions();
+        }
+       public string GetAnswer(int ID)
+        {
+            return _questionService.GetAnswer(ID);
+        }
     }
 }

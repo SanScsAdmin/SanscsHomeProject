@@ -62,6 +62,7 @@
     <Compile Include="Filters\EnableCorsAttribute.cs" />
     <Compile Include="Helpers\CommonHelper.cs" />
     <Compile Include="Helpers\RegexHelper.cs" />
+    <Compile Include="Helpers\XsltHelper.cs" />
     <Compile Include="Log\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

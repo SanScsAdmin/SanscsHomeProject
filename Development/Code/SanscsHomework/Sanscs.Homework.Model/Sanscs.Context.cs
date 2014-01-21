@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sanscs.Homework.Model
+namespace Sanscs.Model
 {
     using System;
     using System.Data.Entity;
@@ -26,8 +26,7 @@ namespace Sanscs.Homework.Model
         {
             throw new UnintentionalCodeFirstException();
         }
-
-        public virtual void Commit()
+    	public virtual void Commit()
         {
             try
             {
@@ -59,5 +58,6 @@ namespace Sanscs.Homework.Model
         public DbSet<students_experience> students_experience { get; set; }
         public DbSet<tag> tags { get; set; }
         public DbSet<term> terms { get; set; }
+        public DbSet<question_type> question_type { get; set; }
     }
 }

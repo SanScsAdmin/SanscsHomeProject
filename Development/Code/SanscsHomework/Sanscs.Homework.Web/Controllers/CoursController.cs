@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Sanscs.Homework.Service.Contracts;
-using Sanscs.Homework.Model;
+using Sanscs.Model;
 using Newtonsoft.Json;
 using Sanscs.Homework.Common.Filters;
 using Sanscs.Homework.Common.Log;
