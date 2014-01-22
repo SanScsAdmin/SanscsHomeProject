@@ -17,3 +17,4 @@ F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homewo
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\bin\Debug\Newtonsoft.Json.xml
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Model.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Model.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Model\obj\Debug\Sanscs.Homework.Model.csprojResolveAssemblyReference.cache

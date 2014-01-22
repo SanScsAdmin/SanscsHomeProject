@@ -28,6 +28,7 @@ F:\myproject\SanscsHomework\Sanscs.Homework.Service\bin\Debug\Newtonsoft.Json.xm
 F:\myproject\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Homework.Service.csprojResolveAssemblyReference.cache
 F:\myproject\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Service.dll
 F:\myproject\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Service.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Homework.Service.csprojResolveAssemblyReference.cache
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\bin\Debug\Sanscs.Homework.Service.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\bin\Debug\Sanscs.Homework.Service.pdb
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\bin\Debug\Sanscs.Common.dll
@@ -52,6 +53,5 @@ F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homewo
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\bin\Debug\EntityFramework.xml
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\bin\Debug\Newtonsoft.Json.xml
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\bin\Debug\System.Net.Http.Formatting.xml
-F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Homework.Service.csprojResolveAssemblyReference.cache
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Homework.Service.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Service\obj\Debug\Sanscs.Homework.Service.pdb

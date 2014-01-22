@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Question</title>
+    <meta charset="utf-8" />
     <script src="../Scripts/jquery-1.8.2.js" type="text/javascript"></script>
     <!--<script src="../Scripts/jquery-ui-1.8.11.min.js" type="text/javascript"></script>-->
     <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
@@ -9,12 +10,60 @@
     <script src="../Scripts/common.js" type="text/javascript"></script>
     <script src="../Scripts/draggable.js" type="text/javascript"></script>
     <script src="../Scripts/ViewsJS/Question.js"></script>
+
     <link href="../../../Content/Site.css" rel="stylesheet">
     <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+    <link href="../../../Content/1140.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .content div {
+            background: #0094ff;
+            height: 600px;
+        }
+        header, footer {
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+            background: #622d2d;
+            height:50px;
+        }
+        .side{
+            width:30%;
+            background:#0094ff;
+            height:500px;
+            float:left;
+        }
+        .main{
+            float:left;
+        }
+    </style>
 </head>
 <body> 
-   <div id="question"></div>
-    <button data-bind="click:prev">prev</button>
-    <button data-bind="click:next">next</button> 
+    <header>sdf</header>
+    <section>
+        <div class="row">
+            <div class="side"></div>
+            <div class="main">
+              <div class="toptool">
+                  <button>在线做题</button>
+                  <button>错题集</button>
+                  <button>收藏夹</button>
+                  <button>做题集</button>
+              </div>
+                <div id="question"></div>
+                <div data-bind="visible:IsSubmitted"></div>
+                <div data-bind="visible:IsSubmitted"></div>
+                <div class="bottomtool">
+                    <button id="submit" data-bind="visible:!IsSubmitted()">提交并查看答案</button>
+                    <button id="next" data-bind="onclick:next,visible:!IsSubmitted() && !IsLast()">下一题</button>
+                    <button id="next" data-bind="onclick:prev,visible:!IsSubmitted() && !IsFirst()">上一题</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>est</footer>
 </body>
 </html>

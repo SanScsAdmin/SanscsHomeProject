@@ -5,6 +5,7 @@ function getanswer(o) {
     var serverUrl = answerAddress + id;
     $.get(serverUrl, function (data) {
         alert(data);
+        IsSubmitted
     });
 }
 function getCurrent() {
@@ -16,9 +17,4 @@ function getCurrent() {
         }
     });
     return current;
-}
-function prev() {
-    var current = getCurrent();
-    current.hide();
-    current.prev();
 }

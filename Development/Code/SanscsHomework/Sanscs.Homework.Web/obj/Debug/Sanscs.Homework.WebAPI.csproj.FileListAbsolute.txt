@@ -190,6 +190,8 @@ F:\myproject\SanscsHomework\Sanscs.Homework.Web\bin\zh-Hant\System.Spatial.resou
 F:\myproject\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Homework.WebAPI.csprojResolveAssemblyReference.cache
 F:\myproject\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Web.dll
 F:\myproject\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Web.pdb
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Homework.WebAPI.csprojResolveAssemblyReference.cache
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\Sanscs.Homework.WebAPI.dll.config
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\Sanscs.Homework.WebAPI.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\Sanscs.Homework.WebAPI.pdb
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\Antlr3.Runtime.dll
@@ -282,7 +284,5 @@ F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homewo
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\ru\System.Spatial.resources.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\zh-Hans\System.Spatial.resources.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\zh-Hant\System.Spatial.resources.dll
-F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Homework.WebAPI.csprojResolveAssemblyReference.cache
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Homework.WebAPI.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\obj\Debug\Sanscs.Homework.WebAPI.pdb
-F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Web\bin\Sanscs.Homework.WebAPI.dll.config

@@ -111,7 +111,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\1140.css" />
+    <Content Include="Content\960_24_col.css" />
     <Content Include="Content\CommonStyle.css" />
+    <Content Include="Content\demo.css" />
     <Content Include="Content\Invoice.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\template.css" />

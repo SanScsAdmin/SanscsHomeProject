@@ -33,5 +33,6 @@ F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homewo
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Common\bin\Debug\System.Web.Http.xml
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Common\bin\Debug\System.Net.Http.Formatting.xml
+F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Common\obj\Debug\Sanscs.Homework.Common.csprojResolveAssemblyReference.cache
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Common\obj\Debug\Sanscs.Common.dll
 F:\myproject\git\SanscsHomeProject\Development\Code\SanscsHomework\Sanscs.Homework.Common\obj\Debug\Sanscs.Common.pdb

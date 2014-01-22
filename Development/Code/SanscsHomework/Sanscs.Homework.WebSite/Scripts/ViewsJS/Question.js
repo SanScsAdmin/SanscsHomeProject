@@ -11,17 +11,26 @@ $(function () {
             draggableInit();
         }
         );
-    var QuestionModel = {
-        prev: function () {
+    var  QuestionModel=function()  {
+        this.prev = function () {
+            alert();
             var current = getCurrent();
             current.hide();
             current.prev().show();
-        },
-        next: function () {
+        };
+        this.next= function () {
+            alert();
             var current = getCurrent();
             current.hide();
             current.next().show();
+        };
+        this.IsSubmitted = ko.observable(false);
+        this.IsFirst= function () {
+            return true;
+        };
+        this.IsLast= function () {
+            return false;
         }
-    }
-    ko.applyBindings(QuestionModel);
+    };
+    ko.applyBindings(new QuestionModel());
 });
